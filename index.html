@@ -2,42 +2,153 @@
 <html ng-app="store"> <!--run the module "store" when the document load -->
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Ride a Bike</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body ng-controller="StoreController as store">
-    <ul class="list-group">
-      <li class="list-group-item" ng-repeat="product in store.products">
-        <h3>
-          {{product.name}}
-          <em class="pull-right">{{product.price | currency}}</em>
-          <img ng-src="{{product.images[0].full}}" alt="">
-        </h3>
-        <button ng-show="product.canPurchase" name="button">Add to Cart</button>
 
-        <section>
+    <!-- navbar -->
 
-          <ul class="nav nav-pills">
-            <li><a href="#" ng-click="tab = 1">Description</a></li>
-            <li><a href="#" ng-click="tab = 2">Specifications</a></li>
-            <li> <a href="#" ng-click="tab = 3">Reviews</a></li>
+    <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#"><strong>Vélo</strong></a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+
           </ul>
+        </div>
+      </nav>
 
-          <div class="panel" ng-show="tab === 1">
-            <h4>Description</h4>
-            <p>{{product.description}}</p>
-          </div>
-          <div class="panel" ng-show="tab === 2">
-            <h4>Specification</h4>
-            <p>{{product.description}}</p>
-          </div>
+   </div>
+   <!-- navbar END -->
 
-        </section>
-      </li>
-    </ul>
+   <div class="container-fluid" >
 
+       <div id="header">
+         <img src="assets/bike.png" alt="" class="img-responsive center-block">
+         <h1><span id="behind">Ride </span></br><span id="top">a Bike</span></h1>
+       </div>
+
+       <div class="wrapper">
+         <div class="advantages">
+           <div class="row row-centered">
+             <div class="col-xs-6 col-centered col-fixed">
+               <p>Totally Free</p>
+               <h3>Test Drive</h3>
+               <p>Wonderful</p>
+             </div>
+
+             <div class="col-xs-6 col-centered col-fixed">
+               <p>For all standard offer</p>
+               <h3>Free Shipping</h3>
+               <p>Wonderful</p>
+             </div>
+
+             <div class="col-xs-6 col-centered col-fixed" id="last">
+               <p>Only in 30 days</p>
+               <h3>Free Shipping</h3>
+               <p>Wonderful</p>
+             </div>
+           </div>
+         </div>
+
+         <div class="bests">
+
+           <h4>Featured Products</h4>
+           <p>lorem</p>
+
+           <div class="container">
+             <div class="row row-centered">
+
+               <div class="best_product col-md-5 col-xs-7 col-centered col-fixed">
+                   <img src="assets/bicycle.jpg" alt="">
+                   <div class="product-info">
+                     <p>name</p>
+                     <p>price</p>
+                   </div>
+               </div>
+
+               <div class="best_product col-md-5 col-xs-7 col-centered col-fixed" id="last">
+                   <img src="assets/bicycle.jpg" alt="">
+                   <div class="product-info">
+                     <p>name</p>
+                     <p>price</p>
+                   </div>
+               </div>
+
+             </div>
+           </div>
+
+         </div>
+
+
+         <div class="banner">
+           
+         </div>
+
+       </div>
+
+
+
+    </div>
+
+          <h2>The best gems in town</h2>
+          <ul class="list-group">
+            <li class="list-group-item col-md-4" ng-repeat="product in store.products">
+              <h3>{{product.name}}</h3>
+              <em class="pull-right">{{product.price | currency}}</em>
+              <img ng-src="{{product.images[0].full}}" alt="">
+              <button ng-show="product.canPurchase" name="button">Add to Cart</button>
+
+              <section ng-controller="PanelController as panel">
+
+                <ul class="nav nav-pills">
+                  <li ng-class="{ active:panel.isSelected(1) }">
+                    <a href="#" ng-click="panel.selectTab(1)">Description</a>
+                  </li>
+                  <li ng-class="{ active:panel.isSelected(2) }">
+                    <a href="#" ng-click="panel.selectTab(2)">Specifications</a>
+                  </li>
+                  <li ng-class="{ active:panel.isSelected(3) }">
+                    <a href="#" ng-click="panel.selectTab(3)">Reviews</a>
+                  </li>
+                </ul>
+
+                <div class="panel" ng-show="tab === 1">
+                  <h4>Description</h4>
+                  <p>{{product.description}}</p>
+                </div>
+                <div class="panel" ng-show="tab === 2">
+                  <h4>Specification</h4>
+                  <p>{{product.description}}</p>
+                </div>
+                <div class="panel" ng-show="tab === 3">
+                  <h4>Reviews</h4>
+                  <p>{{product.description}}</p>
+                </div>
+
+              </section>
+            </li>
+          </ul>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
