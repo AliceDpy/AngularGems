@@ -20,7 +20,7 @@
 
 
 var gems = [{
-    name: 'Dodecahedron',
+    name: 'Je me Lève',
     price: 2.95,
     description: 'lorem ipsum super',
     canPurchase: true,
@@ -30,7 +30,7 @@ var gems = [{
     }],
   },
   {
-    name: 'Youpi',
+    name: 'Et je Te',
     price: 23.10,
     description: 'je suis baptiste',
     canPurchase: true,
@@ -40,7 +40,7 @@ var gems = [{
     }],
   },
   {
-    name: 'Youpi',
+    name: 'Bouscule',
     price: 23.10,
     description: 'je suis baptiste',
     canPurchase: true,
@@ -50,7 +50,7 @@ var gems = [{
     }],
   },
   {
-    name: 'Youpi',
+    name: 'Tu ne Te',
     price: 23.10,
     description: 'je suis baptiste',
     canPurchase: true,
@@ -60,7 +60,7 @@ var gems = [{
     }],
   },
   {
-    name: 'Youpi',
+    name: 'Réveil Pas',
     price: 23.10,
     description: 'je suis baptiste',
     canPurchase: true,
@@ -70,7 +70,7 @@ var gems = [{
     }],
   },
   {
-    name: 'Youpi',
+    name: 'Comme',
     price: 23.10,
     description: 'je suis baptiste',
     canPurchase: true,
@@ -80,7 +80,7 @@ var gems = [{
     }],
   },
   {
-    name: 'Youpi',
+    name: 'D\'habitude',
     price: 23.10,
     description: 'je suis baptiste',
     canPurchase: true,
@@ -90,7 +90,7 @@ var gems = [{
     }],
   },
   {
-    name: 'Houla',
+    name: 'Deuh',
     price: 5.40,
     description: 'tequila',
     canPurchase: true,
