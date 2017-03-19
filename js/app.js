@@ -26,8 +26,7 @@ var gems = [{
     canPurchase: true,
     soldOut: true,
     images: [{
-      full:'assets/gem-03.gif',
-      thumb:'assets/gem-03.gif',
+      full:'assets/bicycle.jpg',
     }],
   },
   {
@@ -37,8 +36,57 @@ var gems = [{
     canPurchase: true,
     soldOut: true,
     images: [{
-      full:'assets/gem-03.gif',
-      thumb:'assets/gem-03.gif',
+      full:'assets/bicycle.jpg',
+    }],
+  },
+  {
+    name: 'Youpi',
+    price: 23.10,
+    description: 'je suis baptiste',
+    canPurchase: true,
+    soldOut: true,
+    images: [{
+      full:'assets/bicycle.jpg',
+    }],
+  },
+  {
+    name: 'Youpi',
+    price: 23.10,
+    description: 'je suis baptiste',
+    canPurchase: true,
+    soldOut: true,
+    images: [{
+      full:'assets/bicycle.jpg',
+    }],
+  },
+  {
+    name: 'Youpi',
+    price: 23.10,
+    description: 'je suis baptiste',
+    canPurchase: true,
+    soldOut: true,
+    images: [{
+      full:'assets/bicycle.jpg',
+    }],
+  },
+  {
+    name: 'Youpi',
+    price: 23.10,
+    description: 'je suis baptiste',
+    canPurchase: true,
+    soldOut: true,
+    images: [{
+      full:'assets/bicycle.jpg',
+    }],
+  },
+  {
+    name: 'Youpi',
+    price: 23.10,
+    description: 'je suis baptiste',
+    canPurchase: true,
+    soldOut: true,
+    images: [{
+      full:'assets/bicycle.jpg',
     }],
   },
   {
@@ -48,8 +96,7 @@ var gems = [{
     canPurchase: true,
     soldOut: true,
     images: [{
-      full:'assets/gem-03.gif',
-      thumb:'assets/gem-03.gif',
+      full:'assets/bicycle.jpg',
     }],
   }]
 
